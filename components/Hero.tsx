@@ -2,9 +2,9 @@ import { HeroIllustration } from "./Illos";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative pt-36 pb-20 lg:pt-40 lg:pb-24">
+    <section id="top" className="relative pt-32 pb-20 lg:pt-28 lg:pb-24">
       <div className="relative mx-auto max-w-[1320px] px-6 lg:px-10">
-        <div className="grid lg:grid-cols-12 gap-10 items-end">
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
           {/* Left — headline */}
           <div className="lg:col-span-7 reveal">
             <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-ultra text-ink-600">
