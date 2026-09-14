@@ -13,7 +13,7 @@ export default function Footer() {
               </span>
               <div className="leading-tight">
                 <div className="font-display text-[20px] tracking-tightest text-ink-900">Jagvani Health &amp; Wellness</div>
-                <div className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">Dr. Anushri Mukhopadhyay · Old Goa</div>
+                <div className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">ENT · Vertigo & Balance Care · Old Goa</div>
               </div>
             </div>
 
@@ -28,16 +28,16 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <FooterCol title="Visit">
-              <p>A-215, 2nd Floor, Expat Vida,<br/>Kadamba Plateau, Old Goa 403402</p>
-              <p className="mt-1 italic text-ink-500">above Lenskart</p>
+              <p>A-215, 2nd Floor, Expat Vida,<br/>Kadamba Plateau, Old Goa, Goa 403402</p>
+              <p className="mt-1 italic text-ink-500">above Lenskart, Kadamba</p>
             </FooterCol>
           </div>
 
           <div className="lg:col-span-2">
             <FooterCol title="Reach">
-              <p>+91 832 220 4567</p>
-              <p>+91 98220 12345</p>
-              <p>care@jagvaniclinic.in</p>
+              <p>+91 85540 01561</p>
+              <p>+91 70666 01725</p>
+              <p>mukhoanu009@gmail.com</p>
             </FooterCol>
           </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="mt-10 deco-rule text-ink-400" />
 
         <div className="mt-5 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono uppercase tracking-ultra text-ink-500">
-          <span>© {new Date().getFullYear()} Jagvani Health &amp; Wellness Clinic · Reg. MCI 2007/04812</span>
+          <span>© {new Date().getFullYear()} Jagvani Health &amp; Wellness Clinic · Dr. Anushri Mukhopadhyay · Est. 2025</span>
           <span>Designed in Goa</span>
         </div>
       </div>

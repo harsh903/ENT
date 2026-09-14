@@ -45,13 +45,13 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "ui-serif", "Georgia", "serif"],
-        sans: ["var(--font-dm-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "ui-monospace", "monospace"],
       },
       letterSpacing: {
-        "tightest": "-0.045em",
-        "ultra": "0.32em",
+        "tightest": "-0.02em",
+        "ultra": "0.16em",
       },
       keyframes: {
         marquee: {

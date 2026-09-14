@@ -2,16 +2,16 @@ import { SectionLabel } from "./About";
 import { StreetscapeIllo } from "./Illos";
 
 const hours = [
-  { d: "Mon — Fri", h: "10:00 — 1:30  ·  5:00 — 8:00" },
-  { d: "Saturday", h: "10:00 — 2:00" },
-  { d: "Sunday", h: "By appointment" },
+  { d: "Mon to Sat", h: "10:00 - 1:00  ·  4:00 - 8:00" },
+  { d: "Sunday", h: "Closed" },
+  { d: "Emergency", h: "By appointment" },
 ];
 
 export default function Clinic() {
   return (
     <section id="clinic" className="relative py-24 lg:py-28 bg-parchment-50">
       <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
-        <SectionLabel index="06" title="Visit" />
+        <SectionLabel index="07" title="Visit" />
         <h2 className="mt-5 font-display tracking-tightest text-[40px] sm:text-[54px] lg:text-[64px] leading-[0.98] text-ink-900 max-w-[18ch] text-balance">
           Two sittings,
           <span className="italic font-light text-forest-600"> six days.</span>
@@ -27,20 +27,20 @@ export default function Clinic() {
                   <div className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">Address</div>
                   <div className="mt-1 font-display text-[18px] tracking-tightest text-ink-900 leading-[1.25]">
                     A-215, 2nd Floor, Expat Vida,<br/>
-                    Kadamba Plateau, Old Goa 403402
+                    Kadamba Plateau, Old Goa, Goa 403402
                   </div>
-                  <div className="mt-1 text-[12px] text-ink-600 italic">above Lenskart</div>
+                  <div className="mt-1 text-[12px] text-ink-600 italic">above Lenskart, Kadamba</div>
                 </div>
-                <a href="https://maps.google.com/?q=Expat+Vida+A-215+Kadamba+Plateau+Old+Goa+403402" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-ink-900 text-parchment-50 px-4 py-2 text-[12px]">
+                <a href="https://maps.google.com/?q=Expat+Vida+A-215+Kadamba+Plateau+above+Lenskart+Old+Goa+403402" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-ink-900 text-parchment-50 px-4 py-2 text-[12px]">
                   Open in maps →
                 </a>
               </figcaption>
             </figure>
 
             <div className="mt-4 grid sm:grid-cols-3 gap-3">
-              <Card label="Reception" value="+91 832 220 4567" />
-              <Card label="Whatsapp" value="+91 98220 12345" />
-              <Card label="Email" value="care@jagvaniclinic.in" />
+              <Card label="Reception" value="+91 85540 01561" />
+              <Card label="Whatsapp" value="+91 70666 01725" />
+              <Card label="Email" value="mukhoanu009@gmail.com" />
             </div>
           </div>
 
@@ -66,10 +66,12 @@ export default function Clinic() {
               <div className="mt-5 deco-rule text-ink-400" />
 
               <div className="mt-5 grid grid-cols-2 gap-3 text-[13px]">
-                <Card2 label="Cashless" value="Star · HDFC Ergo · ICICI" />
-                <Card2 label="Access" value="Ramp + lift" />
-                <Card2 label="Parking" value="Mall basement, free 1 hr" />
-                <Card2 label="Languages" value="EN · KO · HI · BN" />
+                <Card2 label="Payments" value="Cash · UPI · Cards" />
+                <Card2 label="Access" value="Wheelchair · Lift · Parking" />
+                <Card2 label="Fees" value="New ₹800 · Follow-up ₹500" />
+                <Card2 label="Languages" value="BN · EN · HI" />
+                <Card2 label="On-site" value="Otology · Endoscopy" />
+                <Card2 label="Established" value="September 2025" />
               </div>
             </div>
           </div>

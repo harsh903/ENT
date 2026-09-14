@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { fraunces, dmSans, jetbrains } from "./fonts";
+import { inter, jetbrains } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jagvani Health and Wellness Clinic — Dr. Anushri Mukhopadhyay, Old Goa",
+  title: "Jagvani Health & Wellness Clinic · ENT, Vertigo & Balance Care · Dr. Anushri Mukhopadhyay, Old Goa",
   description:
-    "ENT & wellness care at Kadamba Plateau, Old Goa. Dr. Anushri Mukhopadhyay leads a small, deeply-trained practice — hearing, sinus, voice, paediatric ENT, vertigo, sleep & more.",
+    "ENT and Vertigo & Balance Care at Kadamba Plateau, Old Goa. Dr. Anushri Mukhopadhyay (MBBS, DNS, MS-ENT, MBA, AFIH): daily ENT consultations with on-site otology & endoscopy, plus vertigo, BPPV, tinnitus & hearing care. 20–25+ years of experience, 5,000+ consultations. Open Monday to Saturday.",
   metadataBase: new URL("https://jagvaniclinic.in"),
   openGraph: {
-    title: "Jagvani Health and Wellness Clinic — Old Goa",
+    title: "Jagvani Health & Wellness Clinic · ENT, Vertigo & Balance Care, Old Goa",
     description:
-      "Dr. Anushri Mukhopadhyay, ENT Specialist. Hearing, sinus, voice, vertigo & paediatric ENT — Kadamba Plateau, Old Goa.",
+      "Dr. Anushri Mukhopadhyay, ENT & Vertigo Specialist. 20–25+ years, 5,000+ consultations. On-site otology & endoscopy at Kadamba Plateau, Old Goa.",
     type: "website",
     locale: "en_IN",
   },
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${dmSans.variable} ${jetbrains.variable}`}
+      className={`${inter.variable} ${jetbrains.variable}`}
     >
       <body className="font-sans antialiased text-ink-800">
         {children}

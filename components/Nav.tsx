@@ -7,7 +7,7 @@ export default function Nav() {
           <div className="leading-tight">
             <div className="font-display text-[18px] tracking-tightest">Jagvani Health & Wellness</div>
             <div className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">
-              Kadamba Plateau · Old Goa
+              ENT · Vertigo & Balance · Old Goa
             </div>
           </div>
         </a>

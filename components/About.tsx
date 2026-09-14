@@ -21,17 +21,20 @@ export default function About() {
               <span className="italic font-light text-forest-600">One careful conversation.</span>
             </h2>
             <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.7] text-ink-700">
-              A single-practitioner ENT &amp; wellness clinic at Kadamba Plateau, Old Goa — audiology room, endoscopic suite, unhurried consultations.
+              An ENT and Vertigo &amp; Balance Care clinic at Kadamba Plateau, Old Goa, established in September 2025. With 20–25+ years across clinical practice, government healthcare, international medical education and corporate healthcare, and 5,000+ consultations to date, Dr. Mukhopadhyay combines clinical expertise with a patient-focused approach.
+            </p>
+            <p className="mt-4 max-w-[52ch] text-[15px] leading-[1.7] text-ink-700">
+              Her care also draws on a holistic perspective informed by the Vedic Shastras, considering the individual as a whole while maintaining a professional medical approach.
             </p>
 
-            <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-2.5 text-[13px]">
+            <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-[13px]">
               {[
-                "On-site audiology",
-                "Endoscopic suite",
-                "Paediatric chair",
-                "Tele-consult follow-ups",
-                "Cashless on 4 insurers",
-                "EN · KO · HI · BN",
+                "Established September 2025",
+                "Daily consultations · Mon to Sat",
+                "On-site otology",
+                "On-site endoscopy",
+                "5,000+ consultations",
+                "Bengali · English · Hindi",
               ].map((b) => (
                 <li key={b} className="flex items-center gap-2 text-ink-700">
                   <span className="inline-block h-1 w-3 bg-terracotta-500" />

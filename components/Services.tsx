@@ -2,14 +2,14 @@ import { SectionLabel } from "./About";
 import { ServiceIllo } from "./Illos";
 
 const services = [
-  { n: "01", kind: "hearing" as const, title: "Hearing & audiology", body: "Audiometry, OAE, tympanometry.", tag: "On-site" },
-  { n: "02", kind: "sinus" as const, title: "Sinus & allergy", body: "Endoscopic exam, image-guided plans.", tag: "Endoscopic" },
-  { n: "03", kind: "voice" as const, title: "Voice & throat", body: "Hoarseness, reflux, vocalists.", tag: "Voice" },
-  { n: "04", kind: "paediatric" as const, title: "Paediatric ENT", body: "Recurring infections, glue ear.", tag: "Children" },
-  { n: "05", kind: "vertigo" as const, title: "Vertigo & tinnitus", body: "Epley, Semont, retraining.", tag: "Balance" },
-  { n: "06", kind: "sleep" as const, title: "Snoring & sleep", body: "Screening, CPAP guidance.", tag: "Sleep" },
-  { n: "07", kind: "hearingAid" as const, title: "Hearing aid fitting", body: "Brand-independent, real-ear.", tag: "Audio" },
-  { n: "08", kind: "office" as const, title: "Office procedures", body: "Wax, foreign-body, cautery.", tag: "Same day" },
+  { n: "01", kind: "sinus" as const, title: "ENT consultation", body: "Daily ear, nose & throat consultation and assessment.", tag: "Daily" },
+  { n: "02", kind: "hearingAid" as const, title: "Otology", body: "Ear examination and care for ear disorders.", tag: "On-site" },
+  { n: "03", kind: "office" as const, title: "Endoscopy", body: "ENT endoscopic examination in the clinic.", tag: "On-site" },
+  { n: "04", kind: "vertigo" as const, title: "Vertigo & balance", body: "Dizziness, BPPV, vestibular migraine, Ménière's.", tag: "Balance" },
+  { n: "05", kind: "hearing" as const, title: "Tinnitus & hearing", body: "Ringing, hearing-related dizziness, audiology.", tag: "Hearing" },
+  { n: "06", kind: "sinus" as const, title: "Sinus & allergy", body: "Blockage, sinusitis, nasal polyps.", tag: "Nose" },
+  { n: "07", kind: "voice" as const, title: "Voice & throat", body: "Hoarseness, throat infections, swallowing.", tag: "Throat" },
+  { n: "08", kind: "sleep" as const, title: "Holistic care", body: "The whole person, informed by the Vedic Shastras.", tag: "Holistic" },
 ];
 
 export default function Services() {
@@ -20,12 +20,12 @@ export default function Services() {
           <div className="lg:col-span-7">
             <SectionLabel index="02" title="What we treat" />
             <h2 className="mt-5 font-display tracking-tightest text-[40px] sm:text-[54px] lg:text-[64px] leading-[0.98] text-ink-900 text-balance">
-              Eight rooms.
-              <span className="italic font-light text-forest-600"> One chair.</span>
+              All things ENT,
+              <span className="italic font-light text-forest-600"> seen whole.</span>
             </h2>
           </div>
           <p className="lg:col-span-5 text-[14.5px] leading-[1.7] text-ink-700 max-w-[44ch]">
-            Most ENT trouble doesn’t need a hospital. It needs the right room and the right hands.
+            Daily consultations with on-site otology and endoscopy, a focused interest in vertigo and balance, and a holistic perspective informed by the Vedic Shastras.
           </p>
         </div>
 
@@ -50,8 +50,8 @@ export default function Services() {
         </div>
 
         <div className="mt-8 flex items-center justify-between gap-4 rounded-2xl border border-ink-900/10 bg-parchment-100 px-5 py-4 text-[13px] text-ink-700">
-          <span>Major surgery referred to GMC Bambolim & Manipal Goa.</span>
-          <a href="#book" className="font-mono text-[11px] uppercase tracking-ultra text-forest-600 link-underline">Ask →</a>
+          <span>Teleconsultation available via WhatsApp video &amp; Google Meet.</span>
+          <a href="#book" className="font-mono text-[11px] uppercase tracking-ultra text-forest-600 link-underline">Book →</a>
         </div>
       </div>
     </section>

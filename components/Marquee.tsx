@@ -1,13 +1,14 @@
 export default function Marquee() {
   const items = [
-    "MBBS · MGM Medical College, Jamshedpur",
-    "Master, Hospital & Healthcare Administration · KIMS",
-    "16+ years clinical ENT",
-    "Foreign Expert Teacher · East Asia rotation",
-    "Senior Medical Officer · Government service",
-    "Professor · ENT, Otolaryngology",
-    "Member, Indian Medical Association",
-    "Reg. MCI 2007/04812",
+    "MBBS · DNS · MS - ENT · MBA · AFIH",
+    "20–25+ years in healthcare",
+    "5,000+ consultations",
+    "On-site otology & endoscopy",
+    "Vertigo & Balance Care",
+    "Holistic care inspired by the Vedic Shastras",
+    "Bengali · English · Hindi",
+    "Teleconsult · WhatsApp video & Google Meet",
+    "Old Goa · Est. September 2025",
   ];
   const repeated = [...items, ...items];
 

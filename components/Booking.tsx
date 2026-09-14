@@ -1,15 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import { CoastalIllo } from "./Illos";
 
-const concerns = ["Hearing", "Sinus", "Voice", "Child", "Vertigo", "Sleep", "Hearing aid", "Other"];
-const slots = ["10:30", "11:15", "12:00", "12:30", "5:00", "5:30", "6:15", "7:00"];
+const WHATSAPP = "917066601725";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Hello Jagvani Health & Wellness Clinic, I'd like to book a consultation.")}`;
 
 export default function Booking() {
-  const [picked, setPicked] = useState<string>("12:30");
-  const [concern, setConcern] = useState<string>("Hearing");
-
   return (
     <section id="book" className="relative py-24 lg:py-28 bg-ink-900 text-parchment-100 overflow-hidden">
       <svg aria-hidden className="pointer-events-none absolute inset-0 w-full h-full opacity-[0.07]">
@@ -24,7 +18,7 @@ export default function Booking() {
       <div className="relative mx-auto max-w-[1320px] px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
           <div className="flex items-center gap-4 text-parchment-100/70">
-            <span className="font-mono text-[11px] uppercase tracking-ultra text-terracotta-400">§ 08</span>
+            <span className="font-mono text-[11px] uppercase tracking-ultra text-terracotta-400">§ 09</span>
             <span className="deco-rule w-12 text-parchment-100/40" />
             <span className="font-mono text-[11px] uppercase tracking-ultra">Book</span>
           </div>
@@ -34,8 +28,8 @@ export default function Booking() {
             <br/><span className="italic font-light text-terracotta-400">set aside.</span>
           </h2>
 
-          <p className="mt-6 text-[14.5px] leading-[1.7] text-parchment-100/80 max-w-[40ch]">
-            Whatsapp confirmation in 30 minutes. First visit is forty-five minutes — long enough to ask everything.
+          <p className="mt-6 text-[14.5px] leading-[1.7] text-parchment-100/80 max-w-[42ch]">
+            Message us on WhatsApp to book. New consultation ₹800 · follow-up ₹500. Teleconsultation available on WhatsApp video &amp; Google Meet.
           </p>
 
           <figure className="mt-8 aspect-[4/5] rounded-3xl max-w-[300px] overflow-hidden border border-parchment-100/15">
@@ -43,80 +37,36 @@ export default function Booking() {
           </figure>
         </div>
 
-        <form className="lg:col-span-7 rounded-3xl bg-parchment-50 text-ink-900 p-7 sm:p-8 relative" onSubmit={(e) => e.preventDefault()}>
+        <div className="lg:col-span-7 lg:self-center rounded-3xl bg-parchment-50 text-ink-900 p-7 sm:p-10 relative">
           <span className="absolute -top-3 right-7 inline-flex items-center gap-2 rounded-full bg-terracotta-500 text-parchment-50 px-3 py-1 text-[10px] font-mono uppercase tracking-ultra">
-            <span className="h-1.5 w-1.5 rounded-full bg-parchment-50" /> 30-min reply
+            <span className="h-1.5 w-1.5 rounded-full bg-parchment-50" /> WhatsApp
           </span>
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Field label="Name" placeholder="As on ID" />
-            <Field label="Phone" placeholder="+91 9XXX XXXXX" />
-          </div>
+          <span className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">Message us on WhatsApp</span>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="mt-2 block font-display text-[34px] sm:text-[48px] leading-none tracking-tightest text-ink-900 hover:text-forest-600 transition-colors">
+            +91 70666 01725
+          </a>
 
-          <div className="mt-5">
-            <Label>Concern</Label>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {concerns.map((c) => (
-                <button
-                  type="button"
-                  key={c}
-                  onClick={() => setConcern(c)}
-                  className={`rounded-full border px-3.5 py-1.5 text-[12.5px] transition-colors ${
-                    concern === c ? "bg-ink-900 text-parchment-50 border-ink-900" : "border-ink-900/15 text-ink-800 hover:border-forest-600 hover:text-forest-600"
-                  }`}
-                >
-                  {c}
-                </button>
-              ))}
-            </div>
-          </div>
+          <p className="mt-5 text-[14.5px] leading-[1.7] text-ink-700 max-w-[48ch]">
+            Send us a message with your name, concern and preferred time, and we&apos;ll reply on WhatsApp to confirm your consultation.
+          </p>
 
-          <div className="mt-5">
-            <Label>Slot · Friday 09 May</Label>
-            <div className="mt-2 grid grid-cols-4 gap-2">
-              {slots.map((s) => (
-                <button
-                  type="button"
-                  key={s}
-                  onClick={() => setPicked(s)}
-                  className={`rounded-xl border py-2.5 font-mono text-[12.5px] tabular-nums transition-colors ${
-                    picked === s ? "bg-forest-600 text-parchment-50 border-forest-600" : "border-ink-900/15 text-ink-800 hover:border-forest-600 hover:text-forest-600"
-                  }`}
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <Label>Note</Label>
-            <textarea rows={2} placeholder="Symptoms, medication, language…" className="mt-2 w-full rounded-2xl border border-ink-900/15 bg-parchment-100/40 px-4 py-3 text-[14px] resize-none focus:outline-none focus:border-forest-600" />
-          </div>
-
-          <button type="submit" className="mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-ink-900 hover:bg-forest-700 text-parchment-50 pl-6 pr-2 py-2 text-[14px] transition-colors">
-            Send request
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-ink-900 hover:bg-forest-700 text-parchment-50 pl-6 pr-2 py-2 text-[14px] transition-colors"
+          >
+            Chat on WhatsApp
             <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-terracotta-500 text-parchment-50">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10m0 0L8 3m4 4L8 11" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path d="M20 12a8 8 0 0 1-11.9 7L4 20l1.1-3.9A8 8 0 1 1 20 12Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+                <path d="M9.2 8.5c.3-.3.8-.3 1 .1l.7 1.4c.1.3 0 .6-.2.8l-.5.5a5 5 0 0 0 2.5 2.5l.5-.5c.2-.2.5-.3.8-.2l1.4.7c.4.2.4.7.1 1-.6.7-1.5 1-2.4.6a7.6 7.6 0 0 1-4.5-4.5c-.3-.9 0-1.8.6-2.4Z" fill="currentColor"/>
               </svg>
             </span>
-          </button>
-        </form>
+          </a>
+        </div>
       </div>
     </section>
-  );
-}
-
-function Label({ children }: { children: React.ReactNode }) {
-  return <span className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">{children}</span>;
-}
-
-function Field({ label, placeholder }: { label: string; placeholder: string }) {
-  return (
-    <label className="block">
-      <Label>{label}</Label>
-      <input type="text" placeholder={placeholder} className="mt-1.5 w-full rounded-2xl border border-ink-900/15 bg-parchment-100/40 px-4 py-3 text-[14px] focus:outline-none focus:border-forest-600 placeholder:text-ink-400" />
-    </label>
   );
 }

@@ -9,7 +9,6 @@
 html, body {
   background: theme(colors.parchment.100);
   color: theme(colors.ink.800);
-  font-feature-settings: "ss01", "ss02", "cv11";
 }
 
 body {
@@ -84,10 +83,9 @@ body {
 /* Smooth scrolling on anchor jumps */
 html { scroll-behavior: smooth; }
 
-/* Fraunces optical adjustments */
+/* Headings — Inter, weighted for clear hierarchy */
 .font-display {
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 144, "SOFT" 50;
+  font-weight: 600;
 }
 
 /* Duotone image treatment — keeps mixed photo sources visually cohesive */

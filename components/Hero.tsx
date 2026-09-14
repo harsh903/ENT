@@ -11,20 +11,20 @@ export default function Hero() {
               <span className="grid place-items-center w-5 h-5 rounded-full border border-ink-400/60">
                 <svg width="9" height="9" viewBox="0 0 9 9"><circle cx="4.5" cy="4.5" r="2" fill="currentColor"/></svg>
               </span>
-              <span>Old Goa · Kadamba Plateau · Est. 2014</span>
+              <span>Old Goa · ENT & Vertigo Care · Est. 2025</span>
               <span className="deco-rule flex-1 max-w-[120px] text-ink-400" aria-hidden />
             </div>
 
-            <h1 className="mt-6 font-display tracking-tightest text-ink-900 text-[54px] sm:text-[72px] lg:text-[96px] leading-[0.95] text-balance">
+            <h1 className="mt-6 font-display tracking-tightest text-ink-900 text-[34px] sm:text-[48px] lg:text-[62px] leading-[1.05] text-balance">
               Quiet, careful
               <br/>
-              <span className="italic font-light text-forest-600">ENT care</span> in
+              <span className="italic font-light text-forest-600">ENT & balance</span>
               <br/>
-              the heart of Goa.
+              care in Old Goa.
             </h1>
 
-            <p className="mt-7 max-w-[44ch] text-[16px] leading-[1.6] text-ink-700">
-              <strong className="font-medium text-ink-900">Dr. Anushri Mukhopadhyay</strong> — sixteen years in the chair, the lecture hall and overseas hospitals.
+            <p className="mt-7 max-w-[50ch] text-[16px] leading-[1.6] text-ink-700">
+              <strong className="font-medium text-ink-900">Dr. Anushri Mukhopadhyay</strong>, MBBS, DNS, MS&nbsp;-&nbsp;ENT, MBA, AFIH, an ENT &amp; vertigo specialist with 20–25+ years in healthcare and 5,000+ consultations to date. Daily consultations with on-site otology and endoscopy.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -36,11 +36,11 @@ export default function Hero() {
                   </svg>
                 </span>
               </a>
-              <a href="tel:+919822012345" className="inline-flex items-center gap-2 rounded-full border border-ink-900/15 px-5 py-3 text-[14px] text-ink-800 hover:border-forest-600 hover:text-forest-600 transition-colors">
+              <a href="tel:+918554001561" className="inline-flex items-center gap-2 rounded-full border border-ink-900/15 px-5 py-3 text-[14px] text-ink-800 hover:border-forest-600 hover:text-forest-600 transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                   <path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
                 </svg>
-                +91 98220 12345
+                +91 85540 01561
               </a>
             </div>
           </div>
@@ -54,13 +54,13 @@ export default function Hero() {
                   <span className="absolute inset-0 rounded-full bg-forest-400 animate-breathe"/>
                   <span className="relative h-2 w-2 rounded-full bg-forest-500"/>
                 </span>
-                Open · slots from 5:00 PM
+                Open · 10-1 PM · 4-8 PM
               </span>
               <figcaption className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="rounded-2xl bg-parchment-50/95 backdrop-blur px-5 py-4">
                   <div className="font-mono text-[10px] uppercase tracking-ultra text-ink-500">The clinic</div>
                   <div className="mt-1 font-display text-[19px] tracking-tightest text-ink-900 leading-tight">
-                    A-215, 2nd Floor, Expat Vida,<br/>Kadamba Plateau, Old Goa 403402
+                    A-215, 2nd Floor, Expat Vida,<br/>Kadamba Plateau, Old Goa, Goa 403402
                   </div>
                   <div className="mt-1 text-[11px] text-ink-600 italic">above Lenskart</div>
                 </div>
@@ -72,13 +72,13 @@ export default function Hero() {
         {/* Stats strip */}
         <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-px bg-ink-900/10 rounded-2xl overflow-hidden">
           {[
-            { k: "16+", v: "Years clinical" },
-            { k: "12k+", v: "Consultations" },
-            { k: "4", v: "Languages" },
+            { k: "20–25+", v: "Years experience" },
+            { k: "5,000+", v: "Consultations" },
+            { k: "3", v: "Languages" },
             { k: "6", v: "Days a week" },
           ].map((s) => (
             <div key={s.v} className="bg-parchment-100 px-6 py-6">
-              <div className="font-display text-[40px] leading-none text-ink-900 tracking-tightest">{s.k}</div>
+              <div className="font-display text-[32px] sm:text-[40px] leading-none text-ink-900 tracking-tightest">{s.k}</div>
               <div className="mt-2 font-mono text-[10px] uppercase tracking-ultra text-ink-500">{s.v}</div>
             </div>
           ))}

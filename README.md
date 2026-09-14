@@ -36,8 +36,9 @@ components/
   Illos.tsx        ENT-themed SVG illustrations (hero, room, 8 services, etc.)
   About.tsx        Clinic-room illustration + bullets
   Services.tsx     8 illustrated service tiles
-  Experience.tsx   5-entry timeline
-  Education.tsx    3 degrees · skills bars · memberships
+  Approach.tsx     5-step care approach
+  Experience.tsx   7-entry career timeline (1998 – present)
+  Education.tsx    5 qualifications · expertise · languages
   Testimonials.tsx 3 reviews + 6-tile specialty strip
   Clinic.tsx       Goan facade illustration · address · hours
   FAQ.tsx          6 Q&A accordion + frangipani illustration

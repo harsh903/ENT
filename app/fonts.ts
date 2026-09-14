@@ -1,15 +1,9 @@
-import { Fraunces, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 
-export const fraunces = Fraunces({
+// Inter — a common, highly readable web font used for both headings and body.
+export const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  display: "swap",
-  axes: ["opsz", "SOFT"],
-});
-
-export const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-inter",
   display: "swap",
 });
 

@@ -3,22 +3,28 @@ import { ServiceIllo } from "./Illos";
 
 const reviews = [
   {
-    body: "Forty minutes at the first visit. Eighteen months without an ear infection since.",
-    name: "Maria Fernandes",
-    where: "Dona Paula",
-    init: "MF",
+    body: "Vertigo is not just “giddiness”, and not merely a symptom to suppress. It deserves careful listening and an accurate diagnosis.",
+    name: "On vertigo",
+    where: "Care philosophy",
+    init: "V",
   },
   {
-    body: "Conservative treatment — no surgery, no expensive medicines. My voice is back.",
-    name: "Suresh Naik",
-    where: "Margao",
-    init: "SN",
+    body: "Many patients arrive uncertain and exhausted. The goal is to help them regain confidence in movement, stability and daily living.",
+    name: "On recovery",
+    where: "Care philosophy",
+    init: "R",
   },
   {
-    body: "Six visits to fine-tune the hearing aid. Honest brand comparison. Grandma is back.",
-    name: "Aanya D'Souza",
-    where: "Mapusa",
-    init: "AD",
+    body: "In the delicate architecture of the inner ear lies our sense of direction. This practice is dedicated to protecting and restoring that balance.",
+    name: "On balance",
+    where: "Care philosophy",
+    init: "B",
+  },
+  {
+    body: "A person is more than a set of symptoms. Care inspired by the Vedic Shastras considers the individual as a whole, while staying professionally medical.",
+    name: "On the whole person",
+    where: "Care philosophy",
+    init: "W",
   },
 ];
 
@@ -28,20 +34,20 @@ export default function Testimonials() {
       <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-7">
-            <SectionLabel index="05" title="Voices" />
+            <SectionLabel index="06" title="Beliefs" />
             <h2 className="mt-5 font-display tracking-tightest text-[40px] sm:text-[54px] lg:text-[64px] leading-[0.98] text-ink-900 text-balance">
-              Three patients,
-              <span className="italic font-light text-forest-600"> three lines.</span>
+              Four beliefs,
+              <span className="italic font-light text-forest-600"> one practice.</span>
             </h2>
           </div>
           <div className="lg:col-span-5 flex items-center gap-3 text-[12px] font-mono uppercase tracking-ultra text-ink-600">
-            <span>Verified · Practo & Google</span>
+            <span>Patient-centred care</span>
             <span className="deco-rule flex-1 text-ink-400" />
-            <span>4.9 · 312</span>
+            <span>Calm · Clear</span>
           </div>
         </div>
 
-        <div className="mt-10 grid md:grid-cols-3 gap-5">
+        <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {reviews.map((r, i) => (
             <figure key={i} className="relative rounded-2xl border border-ink-900/10 bg-parchment-50 p-6 hover:border-forest-600 transition-colors">
               <span aria-hidden className="absolute -top-5 left-6 font-display text-[72px] leading-none text-terracotta-500/40">“</span>

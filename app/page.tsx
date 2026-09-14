@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Testimonials from "@/components/Testimonials";
@@ -19,6 +20,7 @@ export default function Page() {
       <Marquee />
       <About />
       <Services />
+      <Approach />
       <Experience />
       <Education />
       <Testimonials />
